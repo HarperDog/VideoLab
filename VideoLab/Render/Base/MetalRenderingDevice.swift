@@ -31,12 +31,9 @@ public class MetalRenderingDevice {
         self.commandQueue = queue
 
         do {
-            let frameworkBundle = Bundle(for: MetalRenderingDevice.self)
-            let metalLibraryPath = frameworkBundle.path(forResource: "default", ofType: "metallib")!
-
-            self.shaderLibrary = try device.makeLibrary(filepath:metalLibraryPath)
+            self.shaderLibrary = try device.makeDefaultLibrary(bundle: Bundle.module)
         } catch {
-            fatalError("Could not load library")
+            fatalError("Could not load metal library")
         }
     }
 }
