@@ -9,6 +9,12 @@
 import Foundation
 import simd
 
+// Matches typedef of BlendMode in BlendModeConstants.h
+public typealias BlendMode = Int
+public let BlendModeNormal = 0
+public let BlendModeDarken = 1
+public let BlendModeMultiply = 2
+
 public class BlendOperation: BasicOperation {
     public var modelView: float4x4 = float4x4.identity() {
         didSet {
