@@ -7,8 +7,8 @@
 //
 
 #include <metal_stdlib>
-#include "OperationShaderTypes.h"
-#include "BlendModeConstants.h"
+#include "../OperationShaderTypes.h"
+#include "../BlendModeConstants.h"
 
 using namespace metal;
 

@@ -8,7 +8,7 @@
 
 #include <metal_stdlib>
 using namespace metal;
-#include "OperationShaderTypes.h"
+#include "../OperationShaderTypes.h"
 
 fragment half4 lookupFragment(SingleInputVertexIO fragmentInput [[stage_in]],
                               texture2d<half> inputTexture [[texture(0)]],

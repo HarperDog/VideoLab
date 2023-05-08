@@ -8,7 +8,7 @@
 
 #include <metal_stdlib>
 using namespace metal;
-#include "OperationShaderTypes.h"
+#include "../OperationShaderTypes.h"
 
 fragment half4 ChromaKeyFragment(PassthroughVertexIO fragmentInput [[stage_in]],
                                  half4 sourceColor [[color(0)]],

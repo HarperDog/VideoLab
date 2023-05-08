@@ -23,7 +23,7 @@ let package = Package(
             path: "VideoLab",
             resources: [
               .process("VideoLab.bundle"),
-              .copy("Render/Operations"), // metal files
+              .process("Render/Operations/Metal"),
             ]
         ),
     ]
